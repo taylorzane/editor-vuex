@@ -68,7 +68,7 @@ const mutations = {
   },
   EDIT_FIELD (state, field) {
     state.editor.action = 'edit'
-    state.clone = $.extend({}, field)
+    state.clone = field
   },
   DELETE_FIELD (state, field) {
     state.profile[field.type].$remove(field)
